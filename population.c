@@ -1,3 +1,5 @@
+// Determine how long it takes for a population to reach a particular size.
+
 #include<stdio.h>
 #include<cs50.h>
 
