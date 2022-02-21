@@ -1,3 +1,5 @@
+//creates a step-like obstacle from "#" symbols, through a user input
+
 #include <stdio.h>
 #include <cs50.h>
 
