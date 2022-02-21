@@ -1,4 +1,6 @@
 #include <ctype.h>
+// Determine which of two Scrabble words is worth more.
+
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
