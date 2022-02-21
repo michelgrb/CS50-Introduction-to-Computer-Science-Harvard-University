@@ -1,3 +1,6 @@
+// it is a part of the CS50 spell checker a hash table is created, which contains a directory of words (any directory depending on the input) 
+// it is checked by the check function any text -> and the errors are displayed 
+// finally, the memory is freed
 // Implements a dictionary's functionality
 
 #include <ctype.h>
