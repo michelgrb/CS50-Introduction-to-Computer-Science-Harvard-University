@@ -1,5 +1,4 @@
 // a program that runs a simple election
-// 
 
 #include <cs50.h>
 #include <stdio.h>
