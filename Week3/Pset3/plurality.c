@@ -1,5 +1,5 @@
-// a program that runs a plurality election
-// each voter has 3 votes, candidates are thrown out one after the other - > takes into account alternatives of the voter
+// a program that runs a simple election
+// 
 
 #include <cs50.h>
 #include <stdio.h>
