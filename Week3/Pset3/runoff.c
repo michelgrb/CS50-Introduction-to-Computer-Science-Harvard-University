@@ -1,3 +1,5 @@
+// each voter has 3 votes, candidates are thrown out one after the other - > takes into account alternatives of the voter
+
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
