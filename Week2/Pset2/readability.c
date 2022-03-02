@@ -1,3 +1,5 @@
+// a program that takes an input text and returns the grade level of complexity
+
 #include <ctype.h>
 #include <cs50.h>
 #include <stdio.h>
