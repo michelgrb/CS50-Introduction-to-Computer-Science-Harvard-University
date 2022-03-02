@@ -1,3 +1,5 @@
+//a program that implements a substitution cipher
+
 #include <ctype.h>
 #include <cs50.h>
 #include <stdio.h>
