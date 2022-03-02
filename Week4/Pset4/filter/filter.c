@@ -1,3 +1,5 @@
+// a program that applies filters to BMPs -> grid of pixels are manipulated
+
 #include <getopt.h>
 #include <stdio.h>
 #include <stdlib.h>
