@@ -1,0 +1,1 @@
+select AVG(energy) From songs;

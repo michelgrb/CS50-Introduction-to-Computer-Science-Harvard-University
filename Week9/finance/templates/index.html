@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <head>
+            <b>
+            <h>Symbol </h>
+            <h>Name </h>
+            <h>Shares </h>
+            <h>Price </h>
+            <h>Total Cash </h></b>
+        </head>
+
+        <body>
+        {% for s in stocks %}
+            <br>
+            <row>{{s.symbol}} </row>
+            <row>{{s.name}} </row>
+            <row>{{s.shares}} </row>
+            <row>{{s.price | usd}} </row>
+            <row>{{s.total | usd}} </row>
+            <br>
+        {% endfor %}
+        <br>
+        <row>{{infos}}</row><br><br>
+        <br>
+        <row>Cash: {{cash | usd}}</row><br><br>
+        <row>TotalValue: {{totaltotalcash | usd}}</row><br>
+
+        </body>
+
+    </table>
+{% endblock %}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Questions!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which color does an Monkey look like?</h3>
+                <button id="B1">Blue</button>
+                <button id="B2">Green</button>
+                <button id="B3">Pink</button>
+                <button id="B4">Brown</button>
+                <p id="response">
+
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>How are you?</h3>
+                <input type="text" id="input"><button type="button" id="B5">Confirm</button><br><br>
+                <p id="response1">
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+
+
+        <script>
+        const element = document.getElementById("B1");
+        const element1 = document.getElementById("B2");
+        const element2 = document.getElementById("B3");
+        const element3 = document.getElementById("B4");
+        const element4 = document.getElementById("B5");
+        const element5 = document.getElementById("input");
+
+        element.addEventListener("click", wrong1);
+        element1.addEventListener("click", wrong2);
+        element2.addEventListener("click", wrong3);
+        element3.addEventListener("click", right);
+        element4.addEventListener("click", textf);
+
+        function right() {
+          document.getElementById("response").innerHTML = "Correct!";
+          element3.style.background='#7CFC00';
+        }
+
+        function wrong1() {
+          document.getElementById("response").innerHTML = "Incorrect";
+          element.style.background='#FF0000';
+        }
+
+        function wrong2() {
+          document.getElementById("response").innerHTML = "Incorrect";
+          element1.style.background='#FF0000';
+        }
+
+        function wrong3() {
+          document.getElementById("response").innerHTML = "Incorrect";
+          element2.style.background='#FF0000';
+        }
+
+        function textf(){
+            if(document.getElementById("input").value.toLowerCase() == "yes"){
+                element5.style.background='#7CFC00';
+                document.getElementById("response1").innerHTML = "Correct!";
+            } else {
+                document.getElementById("response1").innerHTML = "Incorrect";
+                element5.style.background='#FF0000';
+            }
+        }
+
+        </script>
+
+
+
+    </body>
+</html>

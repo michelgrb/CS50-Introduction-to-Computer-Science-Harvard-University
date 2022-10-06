@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Hostory
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <head>
+            <b>
+            <h>Symbol </h>
+            <h>Name </h>
+            <h>Shares </h>
+            <h>Price </h>
+            <h>Transactiontype </h>
+            <h>Date </h>
+            <h>Time </h>
+            <h>UserID </h>
+            </b>
+        </head>
+        <br><br>
+        <body>
+        {% for s in transactions %}
+            <row>{{s.symbol}} </row>
+            <row>{{s.shares}} </row>
+            <row>{{s.price | usd }} </row>
+            <row>{{s.transactiontype}} </row>
+            <row>{{s.date}} </row>
+            <row>{{s.time}} </row>
+            <row>{{s.userID}} </row>
+            <br><br>
+
+        {% endfor %}
+        <br>
+        <row>{{infos}}</row><br><br>
+        </body>
+
+    </table>
+{% endblock %}
